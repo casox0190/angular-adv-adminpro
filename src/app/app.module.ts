@@ -2,11 +2,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { PagesModule } from './pages/pages/pages.module';
+import { PagesModule } from './pages/pages.module';
 
 //Componentes
 import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { AuthModule } from './auth/auth.module';
+
+
 
 
 @NgModule({
@@ -15,12 +18,14 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     // LoginComponent,
     // RegisterComponent,
     NopagefoundComponent,
-
+   
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

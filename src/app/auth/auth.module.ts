@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ExamplengmodelComponent } from './examplengmodel/examplengmodel.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -9,14 +13,22 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     LoginComponent,
     RegisterComponent,
+    ExamplengmodelComponent,
+    
+
   ],
 
   exports:[
     LoginComponent,
     RegisterComponent,
+    ExamplengmodelComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    FormsModule
+    
   ]
 })
+
 export class AuthModule { }
