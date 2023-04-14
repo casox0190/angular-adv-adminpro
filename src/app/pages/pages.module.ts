@@ -18,6 +18,9 @@ import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages/pages.component';
 import { FooterComponent } from '../footer/footer.component';
+import { AccountsettingsComponent } from './accountsettings/accountsettings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -29,14 +32,18 @@ import { FooterComponent } from '../footer/footer.component';
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    FooterComponent
+    FooterComponent,
+    AccountsettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    FooterComponent
+    FooterComponent,
+    AccountsettingsComponent
   ], 
   imports: [
     CommonModule,

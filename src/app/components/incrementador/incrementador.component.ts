@@ -43,15 +43,19 @@ export class IncrementadorComponent implements OnInit{
     if(valor>=100){
       this.progreso=100;
     }
+
     else if(valor<=0){
       this.progreso=0;
     }
 
     if(!valor){
 
-     valor=0;
-     
+      valor=0;
+      /* const inputElement=document.getElementById("boton") as HTMLInputElement;
+      inputElement.value=""; */
+      
     }
+    
       this.valorSalida.emit(valor);
          
   }

@@ -7,7 +7,8 @@ import { PagesModule } from './pages/pages.module';
 //Componentes
 import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
-import { FooterComponent } from './footer/footer.component';
+import { AuthModule } from './auth/auth.module';
+
 
 
 
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
